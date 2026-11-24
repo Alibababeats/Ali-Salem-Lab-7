@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab: Map of US</title>
+
+        <!--
+          TODO 1: Add Leaflet's CSS <link> and JS <script> here.
+          Copy both from https://leafletjs.com/examples/quick-start/
+          (the "Preparing your page" section).
+          Leaflet must load BEFORE script.js, so put it above the line below.
+        -->
+     
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <!-- Our code. "defer" runs it after the HTML has loaded. -->
+        <script src="script.js" defer></script>
+
+        <style>
+            /*
+              TODO 2: Give the map a height (for example 500px).
+              Without a height, the map's div is 0px tall and you see nothing.
+            */
+            #map {
+                height: 500px;
+            }
+
+            h2 {
+              text-align: center;
+              font-size: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Map of US</h2>
+
+        <!-- Leaflet draws the map inside this div. The id must match L.map("map"). -->
+        <div id="map"></div>
+
+        <!--
+          Each marker gets two lines below the map. script.js fills in the
+          text, using these ids to find the right element.
+        -->
+        <h3 id="marker1"></h3>
+        <p id="locality1"></p>
+
+        <!--
+          TODO 3: Add the elements for Marker 2 and Marker 3, following the
+          same pattern (ids: marker2, locality2, marker3, locality3).
+        -->
+        <h3 id="marker2"></h3>
+        <p id="locality2"></p>
+        
+        <h3 id="marker3"></h3>
+        <p id="locality3"></p>
+
+
+    </body>
+</html>
